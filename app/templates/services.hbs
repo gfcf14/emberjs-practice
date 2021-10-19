@@ -1,3 +1,8 @@
 {{page-title "Services"}}
 <h1>Services</h1>
+<ul>
+  {{#each this.model as |service|}}
+    <li>{{service}}</li>
+  {{/each}}
+</ul>
 {{outlet}}
