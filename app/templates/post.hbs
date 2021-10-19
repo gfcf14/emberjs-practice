@@ -1,5 +1,6 @@
 {{page-title "Post"}}
 <h1>{{title}}</h1>
+<button {{on 'click' sayHello}}>Say Hello</button>
 <p>{{body}}</p>
 <p>
   <strong>Authors:</strong>
@@ -13,5 +14,18 @@
     <li><strong>{{comment.name}}</strong> - {{comment.comment}}</li>
   {{/each}}
 </ul>
+
+<hr />
+<h4>Add Comment</h4>
+<form {{on 'submit' this.submitAction}}>
+  <p>
+    Name: {{input value=name}}
+  </p>
+
+  <p>
+    Comment: {{textarea value=comment}}
+  </p>
+  <button type="submit">Submit</button>
+</form>
 
 {{outlet}}
