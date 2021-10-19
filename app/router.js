@@ -15,4 +15,5 @@ Router.map(function () {
     this.route('new');
   });
   this.route('events');
+  this.route('post');
 });

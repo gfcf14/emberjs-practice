@@ -1,8 +1,7 @@
-import Ember from 'ember';
-// import Route from '@ember/routing/route';
+import Route from '@ember/routing/route';
 
-export default Ember.Route.extend({
-  model: function () {
+export default class ServicesRoute extends Route {
+  model = () => {
     return ['PC Repair', 'Network Diagnostics', 'Home Audio Install'];
-  },
-});
+  };
+}
