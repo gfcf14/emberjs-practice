@@ -19,6 +19,7 @@ export default class PostController extends Controller {
   title = 'My Blog Post';
   body = 'This is the body of my blog post';
   authors = ['William', 'Robert', 'Michelle'];
+  created = new Date();
   comments = [
     { name: 'Mike Smith', comment: 'Thanks for the great post' },
     { name: 'John Doe', comment: 'Nice Post!' },

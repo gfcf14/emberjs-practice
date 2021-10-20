@@ -1,6 +1,9 @@
 {{page-title "Post"}}
-<h1>{{title}}</h1>
-<button {{on 'click' sayHello}}>Say Hello</button>
+<h1>{{format-date title}}</h1>
+<button type="button" {{on 'click' sayHello}}>Say Hello</button>
+<p>
+  Created on {{created}}
+</p>
 <p>{{body}}</p>
 <p>
   <strong>Authors:</strong>
